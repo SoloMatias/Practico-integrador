@@ -27,5 +27,8 @@ footer nav a {
     flex-basis: 75%;
     padding: 20px;
   }
+  div.productos img{
+      max-width: 10%;
+      max-height: 10%;
+  }
   ul li{list-style: none;}
-  
