@@ -1,4 +1,4 @@
-fetch('datos-productos.json')
+fetch('https://github.com/SoloMatias/Practico-integrador/blob/main/datos-productos.json')
   .then(response => response.json())
   .then(data => {
     // Aquí tienes acceso a tus datos de productos
