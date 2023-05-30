@@ -1,4 +1,4 @@
-fetch('C:/Users/Matias/Documents/Tec. Uni Web (TUW)/DISEÑO DE SITIOS WEB/ejercicio/datos-productos.json')
+fetch('datos-productos.json')
   .then(response => response.json())
   .then(data => {
     // Aquí tienes acceso a tus datos de productos
