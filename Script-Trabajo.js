@@ -35,8 +35,7 @@ productosFiltrados.forEach(function(producto) {
   
   var imagen = document.createElement("img");
   imagen.src = producto.imagen;
-  imagen.cssText="width:20px; height:20px;"
-  imagen.classList.add("d-block");
+  imagen.cssText="width:20px; height:20px;"  
   productoHTML.appendChild(imagen); 
  
   var precio = document.createElement("p");
@@ -64,5 +63,3 @@ listaCategorias.addEventListener("click", function(event) {
     mostrarProductos(productos, categoriaSeleccionada);
   }
 });
-
-  
