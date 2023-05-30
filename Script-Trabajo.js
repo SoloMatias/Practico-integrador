@@ -27,13 +27,16 @@ function mostrarProductos(productos, categoria) {
   // Mostrar los productos en el contenedor
 productosFiltrados.forEach(function(producto) {
   var productoHTML = document.createElement("div");
-  
+  productoHTML.classList.add("container");
+  productoHTML.style.cssText="margin: auto;"
   var nombre = document.createElement("h3");
   nombre.textContent = producto.nombre;
   productoHTML.appendChild(nombre);
   
   var imagen = document.createElement("img");
   imagen.src = producto.imagen;
+  imagen.cssText="width:20px; height:20px"
+  imagen.classList.add("d-block w-100");
   productoHTML.appendChild(imagen); 
  
   var precio = document.createElement("p");
