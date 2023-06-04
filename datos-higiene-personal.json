@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Gel antibacterial",
+    "categoria": "categoria1",
+    "precio": 19.99,    
+    "imagen": "productos/gel-antibacterial.png"
+  },
+  {
+    "nombre": "Gel de baño",
+    "categoria": "categoria1",
+    "precio": 24.99,    
+    "imagen": "productos/gel-de-bano.jpg"
+  },  
+  {
+    "nombre": "Gel fijador",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/gel-fijador.jpg"
+  },
+  {
+    "nombre": "Jabon de carbon activado",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/jabon-carbon.jpg"
+  }  
+]
