@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Acido Estearico",
+    "categoria": "categoria1",
+    "precio": 19.99,    
+    "imagen": "productos/Acido Estearico 12.950.00.jpg"
+  },
+  {
+    "nombre": "Alcohol Cetilico",
+    "categoria": "categoria1",
+    "precio": 24.99,    
+    "imagen": "productos/Alcohol Cetilico 18.500.00.jpg"
+  },  
+  {
+    "nombre": "Genapol en Pasta al 70%",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/Genapol en Pasta al 70% 14.800.00.jpg"
+  },
+  {
+    "nombre": "Monoestearato de Glicerol (Cutina)",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/Monoestearato de Glicerol (Cutina) 22.200.00.jpg"
+  }  
+]
