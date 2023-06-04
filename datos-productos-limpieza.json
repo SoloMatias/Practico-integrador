@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Antigrasa",
+    "categoria": "categoria1",
+    "precio": 19.99,    
+    "imagen": "productos/antigrasa.jpg"
+  },
+  {
+    "nombre": "Cera para pisos",
+    "categoria": "categoria1",
+    "precio": 24.99,    
+    "imagen": "productos/cera-para-pisos.jpg"
+  },  
+  {
+    "nombre": "Desinfectante",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/desinfectante.jpg"
+  },
+  {
+    "nombre": "Shampoo carro",
+    "categoria": "categoria1",
+    "precio": 14.99,    
+    "imagen": "productos/shampoo-carro.jpg"
+  }  
+]
