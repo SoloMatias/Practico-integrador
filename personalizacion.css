@@ -9,18 +9,17 @@ body{
  color: #555;
 }
 footer {
-  border-top: 20px solid rgb(212, 248, 236); /* Estilo de línea y color de la línea */    
+  border-top: 20px solid rgba(103, 186, 142, 0.7); /* Estilo de línea y color de la línea */    
   background-color: white;
-  padding: 20px;
-  text-align: center;  
+  padding: 20px;  
 }
-footer p {
-  color: #777;
-}
-footer nav a {
-  color: #555;
-  margin: 0 1%;
+
+.footer-link{
   text-decoration: none;
+  color: #555;
+}
+.footer-link:hover{
+  color: rgba(103, 186, 142, 0.7);
 }
  
   .contenedor {
