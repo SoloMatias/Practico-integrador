@@ -40,55 +40,43 @@
       </nav>
     </header>
 
-  <div class="container" style="padding: 1%; margin: auto;">
-    <h5>Completá el formulario con tus datos, y seleccioná el tipo de consulta</h5>
-    <br>
-    <form class="row g-3" > <!--FORMULARIO-->
+    <div class="container" style="padding: 1%; padding-top: 40px; padding-bottom: 40px; height: 100%!important; margin: auto;">
+      <h5 style="font-weight: bold;" >Completá el formulario con tus datos</h5>
+      <br>
+      <form class="row g-3">
+        <!--FORMULARIO-->
         <div class="col-6">
           <label for="validationDefault01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="validationDefault01"required>
+          <input style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); " type="text" class="form-control" id="validationDefault01" required>
         </div>
         <div class="col-6">
           <label for="validationDefault02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationDefault02" required>
+          <input style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); " type="text" class="form-control" id="validationDefault02" required>
         </div>
         <div class="col-6">
           <label for="validationDefault02" class="form-label">Email</label>
-          <input type="text" class="form-control" id="validationDefault02" required>
-        </div>
-                    
+          <input style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); " type="text" class="form-control" id="validationDefault02" required>
+        </div>  
         <div class="col-6">
           <label for="validationDefault05" class="form-label">Teléfono</label>
-          <input type="text" class="form-control" id="validationDefault05" required>
+          <input style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); " type="text" class="form-control" id="validationDefault05" required>
         </div>
-        <div class="col-12">
-          <label class="form-label">Qué querés solicitar?</label>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="P_Envios">
-            <label class="form-check-label" for="P_Envios">
-              Problemas con el envio
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="P_Envios">
-            <label class="form-check-label" for="C_Producto">
-              Consulta de un producto
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Representante">
-            <label class="form-check-label" for="Representante">
-              Quiero comunicarme con un representante
-            </label>
-          </div>
 
+        <div class="col-6">
+          <label class="form-label">Motivo de consulta</label>
+          <select class="form-select" style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548));">            
+            <option value="Problemas-Envios">Problemas con el envio</option>
+            <option value="consulta-producto">Consulta de un producto</option>
+            <option selected value="Representantes">Quiero comunicarme con un representante</option>
+          </select>  
         </div>
-        
+  
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+          <button               style=" border-radius:  19px; background-color: rgba(21, 151, 71, 0.521); border: none; filter: drop-shadow(0px 0px 2px rgba(31, 182, 106, 0.26)); color: white; "
+          class="btn btn-primary" type="submit">Enviar formulario</button>
         </div>
       </form>
-  </div>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
