@@ -9,7 +9,7 @@ function cargarDatos(url) {
     .then(response => response.json())
     .then(data => {
       // Agregar los productos del archivo JSON al arreglo 'productos'
-      productos = productos.concat(data);
+      productos = productos.push(data);
     })
     .catch(error => {
       console.error('Error al cargar los datos de productos', error);
@@ -39,13 +39,8 @@ function mostrarProductos(productos) {
   // Limpiar el contenedor de productos
   contenedorProductos.innerHTML = "";
 
-  // Filtrar los productos según la categoría seleccionada
-  var productosFiltrados = (categoria === "todos") ? productos : productos.filter(function(producto) {
-    return producto.categoria === categoria;
-  });
-
   // Mostrar los productos en el contenedor
-productosFiltrados.forEach(function(producto) {
+  productos.forEach(function(producto) {
   var productoHTML = document.createElement("div");   
   productoHTML.style.width = "50%";
   productoHTML.style.float = "left";
