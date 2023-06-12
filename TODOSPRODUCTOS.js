@@ -9,7 +9,7 @@ function cargarDatos(url) {
     .then(response => response.json())
     .then(data => {
       // Agregar los productos del archivo JSON al arreglo 'productos'
-      productos = productos.push(data);
+      productos.push(data);
     })
     .catch(error => {
       console.error('Error al cargar los datos de productos', error);
