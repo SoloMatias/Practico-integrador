@@ -27,6 +27,7 @@ function mostrarProductos(productos, categoria) {
   // Mostrar los productos en el contenedor
 productosFiltrados.forEach(function(producto) {
   var productoHTML = document.createElement("div");   
+  productoHTML.classList.add("col-6");
 
   var nombre = document.createElement("h3");
   nombre.textContent = producto.nombre;
