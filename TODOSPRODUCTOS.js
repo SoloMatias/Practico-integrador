@@ -9,7 +9,7 @@ function cargarDatos(url) {
     .then(response => response.json())
     .then(data => {
       // Agregar los productos del archivo JSON al arreglo 'productos'
-      productos.push(data);
+      return data; // Retornar los datos para ser pasados a la siguiente etapa de la cadena
     })
     .catch(error => {
       console.error('Error al cargar los datos de productos', error);
@@ -18,7 +18,10 @@ function cargarDatos(url) {
 
 // Cargar los datos de todos los archivos JSON utilizando Promise.all()
 Promise.all(urls.map(cargarDatos))
-  .then(() => {
+  .then(data => {
+    // Concatenar los datos de todos los archivos en un solo arreglo
+    productos = data.flat();
+    
     // Aquí se ejecuta una vez que todas las promesas se han resuelto correctamente
     console.log('Carga de datos completada');
     mostrarProductos(productos);
@@ -28,9 +31,6 @@ Promise.all(urls.map(cargarDatos))
     // Aquí se maneja cualquier error ocurrido durante la carga de datos
     console.error('Error al cargar los datos de productos', error);
   });
-  
-  ///////////////////////////////////////////////////////////////////////////
-  
 
 // Función para mostrar los productos en el contenedor
 function mostrarProductos(productos) {
@@ -41,22 +41,23 @@ function mostrarProductos(productos) {
 
   // Mostrar los productos en el contenedor
   productos.forEach(function(producto) {
-  var productoHTML = document.createElement("div");   
-  productoHTML.style.width = "50%";
-  productoHTML.style.float = "left";
+    var productoHTML = document.createElement("div");
+    productoHTML.style.width = "50%";
+    productoHTML.style.float = "left";
 
-  var nombre = document.createElement("h3");
-  nombre.textContent = producto.nombre;
-  productoHTML.appendChild(nombre);
+    var nombre = document.createElement("h3");
+    nombre.textContent = producto.nombre;
+    productoHTML.appendChild(nombre);
 
-  var imagen = document.createElement("img");
-  imagen.src = producto.imagen;
-  productoHTML.appendChild(imagen);  
-  
-  var precio = document.createElement("p");
-  precio.textContent = "Precio: " + producto.precio;
-  productoHTML.appendChild(precio);
+    var imagen = document.createElement("img");
+    imagen.src = producto.imagen;
+    productoHTML.appendChild(imagen);
 
-  contenedorProductos.appendChild(productoHTML);
-});
-}  
+    var precio = document.createElement("p");
+    precio.textContent = "Precio: " + producto.precio;
+    productoHTML.appendChild(precio);
+
+    contenedorProductos.appendChild(productoHTML);
+  });
+}
+ 
