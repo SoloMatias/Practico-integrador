@@ -95,6 +95,7 @@ function mostrarProductos(productos) {
     precio.classList.add("productPriceTitle");
     precio.textContent = "Precio ";
     productoHTML.appendChild(precio);
+
     if (producto.precios) {
       producto.precios.forEach(precio => {
         console.log(precio);
@@ -108,8 +109,7 @@ function mostrarProductos(productos) {
         productoHTML.appendChild(pcio);
       })
     }
-
-
+    console.log(productoHTML);
     contenedorProductos.appendChild(productoHTML);
   });
 }
