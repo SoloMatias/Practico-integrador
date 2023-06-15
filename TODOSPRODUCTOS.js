@@ -4,7 +4,7 @@ var productos = [];
 var urls = ['datos-productos-quimicos.json', 'datos-higiene-personal.json', 'datos-productos-limpieza.json'];
 
 var actual = window.location.pathname;
-console.log(actual.split("/"));
+console.log(actual.split("/").slice(-1));
 switch (actual.split("/")[actual.split("/").length -1 ] ) {
   case "productos.html":
     urls = ['datos-productos-quimicos.json', 'datos-higiene-personal.json', 'datos-productos-limpieza.json'];
