@@ -4,18 +4,17 @@ var productos = [];
 var urls = ['datos-productos-quimicos.json', 'datos-higiene-personal.json', 'datos-productos-limpieza.json'];
 
 var actual = window.location.pathname;
-console.log(actual);
-switch (actual) {
-  case "/productos.html":
+switch (actual.split("/")[actual.split("/").length -1 ] ) {
+  case "productos.html":
     urls = ['datos-productos-quimicos.json', 'datos-higiene-personal.json', 'datos-productos-limpieza.json'];
     break;
-  case "/productos-higiene-Personal.html":
+  case "productos-higiene-Personal.html":
     urls = ['datos-higiene-personal.json'];
     break
-  case "/productos-quimicos.html":
+  case "productos-quimicos.html":
     urls = ['datos-productos-quimicos.json'];
     break
-  case "/productos-limpieza-y-desinfectantes.html":
+  case "productos-limpieza-y-desinfectantes.html":
     urls = ['datos-productos-limpieza.json'];
     break
   default:
