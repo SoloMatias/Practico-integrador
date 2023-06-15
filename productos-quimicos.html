@@ -7,6 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="personalizacion.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script>
+      function validarFormulario() {
+        // Obtener los valores de los campos
+        var nombre = document.getElementById('nombre').value;
+        var apellido = document.getElementById('apellido').value;
+        var email = document.getElementById('email').value;
+        var telefono = document.getElementById('telefono').value;
+        let listaprod = document.getElementById("listadoProd").value;
+  
+        // Validar nombre y apellido
+        if (nombre.length < 3) {
+          alert('El nombre deben tener al menos 3 caracteres.');
+          return false;
+        }
+        if (apellido.length < 3) {
+          alert('El apellido deben tener al menos 3 caracteres.');
+          return false;
+        }
+  
+        // Validar email
+        if (!email.includes('@') || !email.endsWith('.com')) {
+          alert('El email debe tener el formato correcto.');
+          return false;
+        }
+  
+        // Validar teléfono
+        if (isNaN(telefono) || telefono < 0 || telefono.length < 10) {
+          alert('El teléfono debe ser un número positivo de al menos 10 dígitos.');
+          return false;
+        }
+        if (listaprod.length < 10) {
+          alert('El listado debe tener al menos 1 producto selecionado.');
+          return false;
+        }
+        // Si todos los campos son válidos, enviar el formulario
+        return true;
+      }
+    </script>
   </head>
   <body>
     <header>      
@@ -60,7 +98,74 @@
           <p style="font-size: 20px; margin-top: 20px;">Envianos tu pedido con todo lo que neceitas y te lo tenemos listo al instante de manera rapida y eficaz para que solo tengas que abonar y retirar.</a></p>
         </div>
       </div>
-      <iframe style="width: 100%;height: 700px; box-shadow: none; border: none; margin: 0; padding: 0; "  id="myHtml" src="./formulario-compra.html"></iframe>
+      <div class="container" style="padding: 1%; padding-bottom: 40px; height: 100%!important; margin: auto;">
+        <h5 style="font-weight: bold;">Completá el formulario con tus datos</h5>
+        <br>
+        <form class="row g-3" onsubmit="return validarFormulario()" action="mailto:matiasplanes6@gmail.com" method="post"
+          enctype="text/plain">
+          <!--FORMULARIO-->
+          <div class="col-6">
+            <label for="nombre">Nombre</label>
+            <input
+              style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); "
+              type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="col-6">
+            <label for="apellido">Apellido</label>
+            <input
+              style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); "
+              type="text" class="form-control" id="apellido" required><br>
+          </div>
+          <div class="col-6">
+            <label for="email">Email</label>
+            <input
+              style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); "
+              type="text" class="form-control" id="email" required>
+          </div>
+          <div class="col-6">
+            <label for="telefono">Teléfono</label>
+            <input
+              style="border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); "
+              type="tel" class="form-control" id="telefono" required><br>
+          </div>
+          <div class="col-6">
+            <label for="metodo-pago">Pedido:</label>
+          </div>
+          <div style="display: flex; flex-wrap: wrap;  ">
+    
+            <div
+              style="flex: 1; min-width: 320px;overflow: hidden; padding: 0px; border-radius:  19px; border: 1px solid rgba(85, 134, 109, 0.548); background: white; filter: drop-shadow(0px 0px 5px rgba(61, 236, 149, 0.548)); ">
+              <select style="margin-bottom: 0px; border-radius: 0px; border: none; " id="select-produ" class="form-select"
+                aria-label="Default select example">
+    
+              </select>
+              <div style="margin: 0px; border-radius: 0px;" class="input-group flex-nowrap ">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input disabled="true" id="inputCant" type="number" class="form-control" placeholder="Ingrese cantidad"
+                  aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <button id="button" disabled="true"
+                style="margin: 0px; width: 100%; background-color: rgba(21, 151, 71, 0.521); border: none; filter: drop-shadow(0px 0px 2px rgba(31, 182, 106, 0.26)); color: white;">Agregar
+                a la lista</button>
+            </div>
+    
+            <div class="input-group"
+              style="filter: drop-shadow(0px 0px 2px rgba(61, 236, 149, 0.548)); border: 1px solid rgba(85, 134, 109, 0.548); border-radius:  20px; overflow: hidden; flex:2; min-width: 300px; padding: 0px; margin: 7px; ">
+              <span class="input-group-text">productos</span>
+              <textarea id="listadoProd" class="form-control" aria-label="With textarea"></textarea>
+            </div>
+    
+          </div>
+    
+          <div class="col-12">
+            <br>
+            <input class="btn" type="submit"
+              style=" border-radius:  19px; background-color: rgba(21, 151, 71, 0.521); border: none; filter: drop-shadow(0px 0px 2px rgba(31, 182, 106, 0.26)); color: white;"
+              value="Enviar formulario">
+          </div>
+        </form>
+      </div>
+  <script src="./formulario-compra.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
   <script src="TODOSPRODUCTOS.js"></script>
     </body>
