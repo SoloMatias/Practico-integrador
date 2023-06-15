@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>      
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <nav style="padding: 0px;" class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid" style="background-color: rgba(103, 186, 142, 0.7);">
           <a class="navbar-brand" href="index.html"> <img src="logo.png" style="border-radius: 5%;" width="180" height="180%"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,10 @@
         <p style="margin-top: 40px;">Fragancia para detergente: Ariel y Rocio Azul. <br> Fragancia para suavizante:
           Suavitel Kin.</p>
         <div style="width: 100%; flex-wrap: wrap; display: flex; justify-content: space-around; align-items: center; ">
-          <img src="detergente.png" style="max-width: 200px;" alt="">
+          <div style= " position: relative; width: auto; justify-content: center; align-items: center; display: flex; " >
+            <img src="tambor.png" style=" z-index: 111111; min-width: 70px; max-width: 150px; " alt="">
+            <img src="burbujas.png" class="burbujas" style=" margin-top: 0px; position: absolute; min-width: 100px; max-width: 200px;" alt="">
+          </div>
           <div style="display: flex; width: 100%; flex:1; justify-content: center; ">
             <div style="min-width: 50%; display: flex;flex-direction: column; ">
               <h4 style="font-weight: bold;">Presentación</h4>
@@ -147,6 +150,11 @@
           </div>
         </div>
       </div>
+    </div>
+    
+    <div style=" padding: 10px; display: flex; flex-direction:  column;  width: 100%; align-items: center; ">
+      <h1 style="margin: 10px;font-weight: bold; ">Contactanos para más información </h1>
+      <p style="font-size: 20px; margin-top: 20px; max-width: 1000px; ">Para obtener mas información comunicate con nosotros a traves de nuestras redes sociales ubicadas al pie de nunestra página ó vía whatsapp en el mismo,tambien puedes contactarnos mediante el formulario de contacto haciendo <a style=" border-radius:  19px; word-wrap:normal; white-space: nowrap; background-color: rgba(21, 151, 71, 0.521); border: none; filter: drop-shadow(0px 0px 2px rgba(31, 182, 106, 0.26)); color: white; text-decoration: none; padding: 5px; " href="/formulario.html">click aquí.</a></p>
     </div>
     <br>    
 

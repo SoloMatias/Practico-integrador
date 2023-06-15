@@ -2,25 +2,82 @@
   {
     "nombre": "Gel antibacterial",
     "categoria": "categoria1",
-    "precio": 19.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad" : "Lt",
+    "precios": [
+      {
+        "valorMenor": "10.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "8.00",
+        "moneda": "USD"
+      }
+    ],          
     "imagen": "productos/gel-antibacterial.png"
   },
   {
     "nombre": "Gel de baño",
     "categoria": "categoria1",
-    "precio": 24.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "12.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "9.00",
+        "moneda": "USD"
+      }
+    ],           
     "imagen": "productos/gel-de-bano.jpg"
   },  
   {
     "nombre": "Gel fijador",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "8.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "5.00",
+        "moneda": "USD"
+      }
+    ],          
     "imagen": "productos/gel-fijador.jpg"
   },
   {
     "nombre": "Jabon de carbon activado",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "La pesentacion de este producto es por unidad sea por menor o mayor a partir de las 10unidades"
+    },
+    "unidad": "c/u",
+    "limite": 5,
+    "precios": [
+      {
+        "valorMenor": "7.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "5.00",
+        "moneda": "USD"
+      }
+    ],          
     "imagen": "productos/jabon-carbon.jpg"
   }  
 ]

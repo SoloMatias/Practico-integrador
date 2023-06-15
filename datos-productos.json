@@ -2,37 +2,38 @@
   {
     "nombre": "Acido Estearico",
     "categoria": "categoria1",
-    "precio": 19.99,    
+    "precio": 19.99,
+    
     "imagen": "productos/Acido Estearico 12.950.00.jpg"
   },
   {
     "nombre": "Alcohol Cetilico",
     "categoria": "categoria1",
-    "precio": 24.99,    
+    "precio": 24.99,
     "imagen": "productos/Alcohol Cetilico 18.500.00.jpg"
   },
   {
     "nombre": "Carbopol importado",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "precio": 14.99,
     "imagen": "productos/Carbopol importado 22.00.jpg"
   },
   {
     "nombre": "Genapol en Pasta al 70%",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "precio": 14.99,
     "imagen": "productos/Genapol en Pasta al 70% 14.800.00.jpg"
   },
   {
     "nombre": "Monoestearato de Glicerol",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "precio": 14.99,
     "imagen": "productos/Monoestearato de Glicerol (Cutina) 22.200.00.jpg"
   },
   {
     "nombre": "Soda Cautica en escama al 98%",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "precio": 14.99,
     "imagen": "productos/Soda Cautica en escama al 98% 11.100.00.jpg"
   }
 ]

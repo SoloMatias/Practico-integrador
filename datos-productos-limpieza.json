@@ -2,25 +2,81 @@
   {
     "nombre": "Antigrasa",
     "categoria": "categoria1",
-    "precio": 19.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "50.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "40.00",
+        "moneda": "USD"
+      }
+    ],          
     "imagen": "productos/antigrasa.jpg"
   },
   {
     "nombre": "Cera para pisos",
     "categoria": "categoria1",
-    "precio": 24.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "15.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "10.00",
+        "moneda": "USD"
+      }
+    ],           
     "imagen": "productos/cera-para-pisos.jpg"
   },  
   {
     "nombre": "Desinfectante",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "8.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "7.00",
+        "moneda": "USD"
+      }
+    ],           
     "imagen": "productos/desinfectante.jpg"
   },
   {
     "nombre": "Shampoo carro",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "Podrás obtener este producto por litro, Galón(3.8lt) ó por mayor con la carboya(20lt)"
+    },
+    "unidad": "lt",
+    "precios": [
+      {
+        "valorMenor": "10.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "8.00",
+        "moneda": "USD"
+      }
+    ],          
     "imagen": "productos/shampoo-carro.jpg"
   }  
 ]

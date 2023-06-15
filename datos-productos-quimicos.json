@@ -2,25 +2,82 @@
   {
     "nombre": "Acido Estearico",
     "categoria": "categoria1",
-    "precio": 19.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "La pesentación de este producto es en Kg ya sea por menor o mayor a partir de 5Kg"
+    },
+    "unidad": "Kg",
+    "precios": [
+      {
+        "valorMenor": "15.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "9.00",
+        "moneda": "USD"
+      }
+    ],   
+    
     "imagen": "productos/Acido Estearico 12.950.00.jpg"
   },
   {
     "nombre": "Alcohol Cetilico",
     "categoria": "categoria1",
-    "precio": 24.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "La pesentación de este producto es en Kg ya sea por menor o mayor a partir de 5Kg"
+    },
+    "unidad": "Kg",
+    "precios": [
+      {
+        "valorMenor": "11.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "8.00",
+        "moneda": "USD"
+      }
+    ],     
     "imagen": "productos/Alcohol Cetilico 18.500.00.jpg"
   },  
   {
     "nombre": "Genapol en Pasta al 70%",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "La pesentación de este producto es en Kg ya sea por menor o mayor a partir de 5Kg"
+    },
+    "unidad": "Kg",
+    "precios": [
+      {
+        "valorMenor": "7.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "5.00",
+        "moneda": "USD"
+      }
+    ],       
     "imagen": "productos/Genapol en Pasta.png"
   },
   {
     "nombre": "Monoestearato de Glicerol (Cutina)",
     "categoria": "categoria1",
-    "precio": 14.99,    
+    "descripcion": {
+      "title": "Presentación:",
+      "content": "La pesentación de este producto es en Kg ya sea por menor o mayor a partir de 5Kg"
+    },
+    "unidad": "Kg",
+    "precios": [
+      {
+        "valorMenor": "7.00",
+        "moneda": "USD"
+      },
+      {
+        "valorMayor": "4.00",
+        "moneda": "USD"
+      }
+    ],       
     "imagen": "productos/Monoestearato de Glicerol (Cutina) 22.200.00.jpg"
   }  
 ]
